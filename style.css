@@ -27,12 +27,12 @@ body {
 .logo {
     color: #ededed;
     text-decoration: none;
-    font-size: larger;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .navbar a {
-    font-size: x-large;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #ededed;
     margin-left: 20px;
@@ -43,18 +43,19 @@ body {
 }
 
 .about {
-    height: 70vh;
+    margin-top: 13rem;
+    margin-bottom: 7rem;
     display: flex;
     align-items:center;
     padding: 0 10%;
 }
 
 .about-header {
-    font-size: 70px;
+    font-size: 5rem;    
 }
 .about-content {
-    max-width: 700px;
-    font-size: x-large;
+    max-width: 600px;
+    font-size: 1.5rem;
     font-weight: 200;
     line-height: 1.5;
 }
