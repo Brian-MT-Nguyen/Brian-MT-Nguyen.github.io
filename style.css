@@ -79,7 +79,7 @@ h3 {
     align-items: flex-start;
     padding-left: 1rem;
     flex-direction: column;
-    max-width: 1020px;
+    max-width: 1019px;
     margin: 0 auto;
     border-left: dotted thick green;
 }
