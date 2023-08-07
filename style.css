@@ -13,12 +13,12 @@ body {
 }
 
 .header {
-    position: relative;
+    position: sticky;
     top: 0;
     width: 100%;
     padding: 20px 10%;
     background: darkgreen;
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     align-items: center;
     z-index: 77;
@@ -27,12 +27,12 @@ body {
 .logo {
     color: #ededed;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .navbar a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #ededed;
     margin-left: 20px;
@@ -44,18 +44,51 @@ body {
 
 .about {
     margin-top: 13rem;
-    margin-bottom: 7rem;
+    margin-bottom: 20rem;
     display: flex;
-    align-items:center;
-    padding: 0 10%;
+    align-items: center;
+    padding: 0 17%;
 }
 
-.about-header {
-    font-size: 5rem;    
+#about-header {
+    font-size: 7rem;    
 }
+
 .about-content {
-    max-width: 600px;
-    font-size: 1.5rem;
+    max-width: 1000px;
+    font-size: 2rem;
     font-weight: 200;
     line-height: 1.5;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#resume-header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 6rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+.resume {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1rem;
+    flex-direction: column;
+    max-width: 1020px;
+    margin: 0 auto;
+    border-left: dotted thick green;
+}
+
+.resume-content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: lighter;
 }
