@@ -27,12 +27,12 @@ body {
 .logo {
     color: #ededed;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
 .navbar a {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #ededed;
     margin-left: 20px;
@@ -43,8 +43,8 @@ body {
 }
 
 .about {
-    margin-top: 10rem;
-    margin-bottom: 15rem;
+    margin-top: 12rem;
+    margin-bottom: 17rem;
     display: flex;
     align-items: center;
     padding: 0 17%;
@@ -91,6 +91,10 @@ h3 {
     font-size: 1.7rem;
     line-height: 1.5;
     font-weight: lighter;
+}
+
+ul {
+    margin-left: 1.5rem;
 }
 
 /* Mobile Changes */
