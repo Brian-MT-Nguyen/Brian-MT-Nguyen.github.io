@@ -35,7 +35,15 @@ scrollLinks.forEach(link => {
         console.log(`Height of h3 element using offsetHeight: ${h3Height}px`);
 
         // also subtract with offset navbars
-        let offset = navbarHeight + scrollingNavbarHeight;
+        let offset = navbarHeight;
+
+        // if mobile multiply by 1.25 for line height else just add
+        if (window.innerWidth <= 1019 || window.innerHeight <= 512) {
+            offset = offset + (1.25 * scrollingNavbarHeight);
+        } 
+        else {
+            offset = offset + scrollingNavbarHeight;
+        }
 
         // finally scroll
         window.scrollTo({
