@@ -23,12 +23,23 @@ scrollLinks.forEach(link => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
 
+        // Acquire the section to scroll to
         const target = document.querySelector(link.getAttribute('href'));
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
-        const offset = navbarHeight + scrollingNavbarHeight; // Adjusted for the height of both navbars
 
+        // Calculate the section position to scroll too
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+
+        // subtract with offset of the header to put it on screen
+        const h3Element = document.querySelector('h3');
+        const h3Height = h3Element.offsetHeight;
+        console.log(`Height of h3 element using offsetHeight: ${h3Height}px`);
+
+        // also subtract with offset navbars
+        let offset = navbarHeight + scrollingNavbarHeight;
+
+        // finally scroll
         window.scrollTo({
-            top: targetPosition - offset,
+            top: targetPosition - offset - h3Height,
             behavior: 'smooth'
         });
     });
