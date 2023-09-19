@@ -96,6 +96,15 @@ h3 {
     font-weight: 400;
 }
 
+h3 a {
+    text-decoration: underline;
+    color: #ededed;
+}
+
+h3 a:hover {
+    color: #00abf0;
+}
+
 h2 {
     text-align: center;
     font-weight: 400;
@@ -127,10 +136,10 @@ ul {
     margin-left: 1.5rem;
 }
 
-/* Mobile Changes */
-@media screen and (max-width: 1019px), (max-height: 512px) {
+/* Mobile Phone Navbar specific changes */
+@media screen and (max-width: 768px) {
     .scrolling-navbar {
-        line-height: 1.25;
+        line-height: 1.1;
         margin-top: 7rem;
         flex-wrap: wrap; /* Allow items to wrap onto the next line */
     }
@@ -138,7 +147,10 @@ ul {
     .scrolling-navbar a {
         flex-basis: 50%; /* Each link takes up 50% of the width on small screens */
     }
+}
 
+/* Mobile Changes */
+@media screen and (max-width: 1019px), (max-height: 512px) {
     .logo {
         font-size: 1.2rem;
     }

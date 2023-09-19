@@ -38,8 +38,8 @@ scrollLinks.forEach(link => {
         let offset = navbarHeight;
 
         // if mobile multiply by 1.25 for line height else just add
-        if (window.innerWidth <= 1019 || window.innerHeight <= 512) {
-            offset = offset + (1.25 * scrollingNavbarHeight);
+        if (window.innerWidth <= 768) {
+            offset = offset + (1.1 * scrollingNavbarHeight);
         } 
         else {
             offset = offset + scrollingNavbarHeight;
