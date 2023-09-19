@@ -32,8 +32,7 @@ scrollLinks.forEach(link => {
         // subtract with offset of the header to put it on screen
         const h3Element = document.querySelector('h3');
         const h3Height = h3Element.offsetHeight;
-        console.log(`Height of h3 element using offsetHeight: ${h3Height}px`);
-
+        
         // also subtract with offset navbars
         let offset = navbarHeight;
 
